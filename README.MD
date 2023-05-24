@@ -8,13 +8,9 @@ InterviewerGPT 提供了一套可用于面试的 AI Prompt 及其实现，可用
 
 InterviewerGPT 目前只提供了 OpenAI API 接口，和 Mirai Console Plugin 实现，欢迎贡献其他接口和实现！
 
-## 使用方法
+## 安装方法
 
-### 作为 API 使用
-
-- 请自行参照 `common` 模块内的代码使用即可。
-
-### 作为 Mirai Console 插件使用
+### 作为 Mirai Console 插件启动
 
 1. 运行 `gradle mirai-console-plugin:buildPlugin` 编译插件；
 2. 从 `./mirai-console-plugin/build/mirai` 文件夹内获得插件文件；
@@ -25,6 +21,18 @@ InterviewerGPT 目前只提供了 OpenAI API 接口，和 Mirai Console Plugin �
 
 1. 设置 `OPENAI-TOKEN` 环境变量为您的 OpenAI API token(secret)；
 2. 直接运行 `gradle mirai-console-plugin-starter:run` 即可。
+
+## 使用方法
+
+### 作为 API 使用
+
+- 请自行参照 `common` 模块内的代码使用即可。
+
+### 作为 Mirai Console 插件或 Mirai Console 嵌入应用使用
+
+1. 在任一机器人所在群聊或与机器人私聊输入 `/开始面试` 即可开始面试
+2. 根据机器人的要求进行面试回答
+3. 输入 `/结束面试` 以结束面试
 
 ## 协议
 
