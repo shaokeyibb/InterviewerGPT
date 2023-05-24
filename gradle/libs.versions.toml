@@ -1,0 +1,13 @@
+[versions]
+kotlin = "1.8.21"
+mirai = "2.14.0"
+
+[libraries]
+openai-kotlin = { module = "com.aallam.openai:openai-client-bom", version = "3.2.4" }
+mirai-core = { module = "net.mamoe:mirai-core", version.ref = "mirai" }
+mirai-console-terminal = { module = "net.mamoe:mirai-console-terminal", version.ref = "mirai" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+mirai-console = { id = "net.mamoe.mirai-console", version.ref = "mirai" }
