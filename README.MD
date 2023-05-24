@@ -18,11 +18,13 @@ InterviewerGPT 目前只提供了 OpenAI API 接口，和 Mirai Console Plugin �
 
 1. 运行 `gradle mirai-console-plugin:buildPlugin` 编译插件；
 2. 从 `./mirai-console-plugin/build/mirai` 文件夹内获得插件文件；
-3. 将编译好的插件文件放入 Mirai Console 的插件文件夹内，运行 Mirai Console。
+3. 设置 `OPENAI-TOKEN` 环境变量为您的 OpenAI API token(secret)；
+4. 将编译好的插件文件放入 Mirai Console 的插件文件夹内，运行 Mirai Console。
 
 ### 作为 Mirai Console 嵌入应用启动
 
-- 直接运行 `gradle mirai-console-plugin-starter:run` 即可。
+1. 设置 `OPENAI-TOKEN` 环境变量为您的 OpenAI API token(secret)；
+2. 直接运行 `gradle mirai-console-plugin-starter:run` 即可。
 
 ## 协议
 
